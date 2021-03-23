@@ -15,6 +15,7 @@
     url: 'https://repos.influxdata.com/influxdb.key'
     id: 2582E0C5
     state: present
+    validate_certs: no
   register: register_telegraf_dependencies_keys_installed
   until: register_telegraf_dependencies_keys_installed is succeeded
 
