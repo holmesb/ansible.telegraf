@@ -8,6 +8,7 @@
     return_content: true
     status_code: 200
     body_format: json
+    validate_certs: no
   register: register_telegraf_version
   delegate_to: localhost
   become: no
